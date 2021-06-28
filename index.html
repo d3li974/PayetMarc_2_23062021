@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/6dcdce40db.js" crossorigin="anonymous"></script>
-        <title>Reservia</title>
-    </head>
-    <body>
-        <!-- Debut Navigateur-->
-        <header>
-            <nav class="fSpaceBetween">
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/6dcdce40db.js" crossorigin="anonymous"></script>
+            <title>Reservia</title>
+        </head>
+        <body>
+            <!-- Debut Navigateur-->
+            <header>
+                <nav class="fSpaceBetween">
                 
-                    <div> <img id="imgLogo" src=".\images\logo\Reservia.svg" alt="Revervia logo"> </div>
-                    <div class="fSpaceAround divNav">
-                        <div> <a class= "nodeco SizeNav NavHover fCenter" href="#">Hébergements</a> </div>
-                        <div> <a class="nodeco SizeNav NavHover fCenter" href="#">Activités</a> </div>
-                        <div id="SignIn"> <a  class="fCenter nodeco bold Bleufoncé SizeNav" href="#">S'inscrire</a> </div>
-                    </div>
+                        <div> <img id="imgLogo" src=".\images\logo\Reservia.svg" alt="Revervia logo"> </div>
+                        <div class="fSpaceAround divNav">
+                            <div class="NavHover fCenter"> <a class= "nodeco SizeNav" href="#">Hébergements</a> </div>
+                            <div class="NavHover fCenter"> <a class="nodeco SizeNav" href="#">Activités</a> </div>
+                            <div id="SignIn"> <a  class="nodeco bold Bleufoncé SizeNav fCenter-" href="#">S'inscrire</a> </div>
+                        </div>
                 
-            </nav>
-        </header>     
+                </nav>
+            </header>     
         <!-- Fin Navigateur-->
         <!-- Barre de recherche -->
-        <section >
-            <div> <h1 class="BoldGras BorderNone">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="BorderNone MargingBot">En plein centre ville ou en pleine nature</p>
-            </div>
-            <div class="fCenter bordureSearch">
-                <div> <i class="fas fa-map-marker-alt"></i> </div>
-                <div><input type="search" placeholder="Marseille, France"></div>
-                <div><button>Rechercher</button></div>
-            </div>
-        </section>
+            <section >
+                <div> <h1 class="BoldGras NoBorder">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="NoBorder MargingBot">En plein centre ville ou en pleine nature</p>
+                </div>
+                <div class="fCenter bordureSearch MargSearch">
+                    <div id="IconeSize" class="backGris fCenter"> <i class="fas fa-map-marker-alt"></i> </div>
+                    <div><input id="search" type="search" placeholder="Marseille, France"></div>
+                    <div><button id="ButtonSearch">Rechercher</button></div>
+                </div>
+            </section>
         <!-- Barre de recherche  -->
     </body>
