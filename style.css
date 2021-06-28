@@ -1,15 +1,15 @@
-.Center{
+.fSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fCenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.SpaceAround{
+.flexSpaceAround{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-.SpaceBetween{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
