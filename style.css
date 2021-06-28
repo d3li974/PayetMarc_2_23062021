@@ -1,3 +1,15 @@
-p{
-    color: aqua;
+.Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.SpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
