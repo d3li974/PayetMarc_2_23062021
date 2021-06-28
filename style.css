@@ -1,15 +1,84 @@
+body, html{
+    font-family: "Raleway";
+    
+}
 .fSpaceBetween{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .fCenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.flexSpaceAround{
+.fSpaceEven{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fSpaceAround{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.Bleufoncé{
+    color: #0065fc;
+}
+.Bleuclair{
+    color: #DEEBFF;
+}
+.backGris{
+    background-color: #F2F2F2;
+}
+/* Nav */ 
+
+.nodeco{
+    text-decoration: none;
+}
+.BoldGras{
+    font-weight: bold;
+}
+.divNav{
+    width: 400px;
+    margin-right: 40px;
+    height: 50px;
+    
+}
+.borderNav{
+border-radius: 20px ;
+}
+.SizeNav{
+    font-size: 105%;
+}
+#SignIn:hover {
+    border-bottom: 2px #0065fc solid;
+    border-top: none;
+    
+  }
+  .NavHover:hover{
+    border-top: 2px #0065fc solid;
+    color: #0065fc;
+    
+  }
+  #imgLogo{
+      
+      flex-basis: 580%;
+  }
+
+
+
+
+/* Barre de recherche */
+.bordureSearch{
+    width: 420px;
+    border-radius: 10px;
+}
+.BorderNone{
+    border: 0px;
+    margin: 0px;
+}
+.MargingBot{
+    margin-bottom: 20px;
 }

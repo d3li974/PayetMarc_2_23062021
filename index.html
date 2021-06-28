@@ -4,23 +4,37 @@
         <link rel="stylesheet" href="style.css">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6dcdce40db.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
     <body>
         <!-- Debut Navigateur-->
-        <nav>
-            <div class="fSpaceBetween">
-                <div> 
-                    <img src=".\images\logo\Reservia.svg" alt="Revervia logo">
-                </div>
-                <div class="fSpaceAround">
-                    <div><a href="#">Hébergements</a></div>
-                    <div><a href="#">Activités</a></div>
-                    <div><a href="#">S'inscire</a></div>
-                    
-                </div>
-            </div>
-        </nav>
+        <header>
+            <nav class="fSpaceBetween">
+                
+                    <div> <img id="imgLogo" src=".\images\logo\Reservia.svg" alt="Revervia logo"> </div>
+                    <div class="fSpaceAround divNav">
+                        <div> <a class= "nodeco SizeNav NavHover fCenter" href="#">Hébergements</a> </div>
+                        <div> <a class="nodeco SizeNav NavHover fCenter" href="#">Activités</a> </div>
+                        <div id="SignIn"> <a  class="fCenter nodeco bold Bleufoncé SizeNav" href="#">S'inscrire</a> </div>
+                    </div>
+                
+            </nav>
+        </header>     
         <!-- Fin Navigateur-->
-        
+        <!-- Barre de recherche -->
+        <section >
+            <div> <h1 class="BoldGras BorderNone">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="BorderNone MargingBot">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="fCenter bordureSearch">
+                <div> <i class="fas fa-map-marker-alt"></i> </div>
+                <div><input type="search" placeholder="Marseille, France"></div>
+                <div><button>Rechercher</button></div>
+            </div>
+        </section>
+        <!-- Barre de recherche  -->
     </body>
