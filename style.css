@@ -206,36 +206,53 @@ h2{
     margin-top: 40px;
 }
 /* Hebergement */
+h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
 .contHeb{
     width: 60%;
     height: 100%;
-    background-color: #F2F2F2;
     border-radius: 25px 25px 25px 25px;
-    margin-right: 50px;
+    margin-right: 0px;
     margin-top: 40px;
-    min-width: 300px;
+    
+    
     
 }
 .imgBoite{
     display: flexbox;
-    width: 30%;
+    width: 25%;
     height: 200px;
     background-color: white;
     padding: 1%;
     border-radius: 10%;
-    margin: 20px;
-    min-width: 250px;
+    min-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    
 }
 .imgText{
-    width: 90%;
+    width: 100%;
     height:50%;
+    font-size: 85%;
+}
+.padText{
+    padding-bottom: 5px;
+}
+.imgTextPos{
+    margin-top: 15px;
+    margin-left: 20px;
 }
 .cCont1{
-    padding-right: 20px;
+    margin-left: 0px;
     padding-bottom: 20px;
     padding-right: 20px;
 }
 .cCont2{
+    margin-left: 10px;
     padding-bottom: 20px;
     padding-right: 20px;
 }
