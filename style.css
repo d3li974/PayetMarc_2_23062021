@@ -2,21 +2,36 @@ body, html{
     font-family: "Raleway";
     margin-left: 20px;
     max-width: 2400px;
-    
 }
-.fwrap{
-    flex-wrap: wrap;
+.fColonne{
+    display: flex;
+    flex-direction: column;
+}
+.fWrap{
+    flex-flow: wrap;
 }
 .fSpaceBetween{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     flex-wrap: wrap;
+}
+.fColSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 .fCenter{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.fColCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .fSpaceEven{
     display: flex;
@@ -25,11 +40,19 @@ body, html{
 }
 .fStart{
     justify-content: flex-start;
+    align-content: flex-start;
 }
 .fSpaceAround{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+.fColSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
 }
 .Bleufoncé{
     color: #0065fc;
@@ -43,19 +66,21 @@ body, html{
 .backGris{
     background-color: #F2F2F2;
 }
+.BoldGras{
+    font-weight: bold;
+}
+.black{
+    color: black;
+}
 /* Nav */ 
 
 .nodeco{
     text-decoration: none;
 }
-.BoldGras{
-    font-weight: bold;
-}
 .divNav{
     width: 400px;
     margin-right: 40px;
     height: 50px;
-    
 }
 .borderNav{
 border-radius: 20px ;
@@ -121,11 +146,13 @@ border-radius: 20px ;
     border-radius: 0px 15px 15px 0px;
     border: #F2F2F2 1px solid;
 }
-#buttonSearch:hover{
+#ButtonSearch:hover{
     background-color: #DEEBFF;
+    color: #0065fc;
+    border: #0065fc 2px solid;
 }
 /* Filtres */ 
-.Filtres{
+.BoiteFiltres{
     flex-wrap: wrap;
     width: 900px;
     align-items: center;
@@ -138,12 +165,11 @@ border-radius: 20px ;
 }
 .Filtre{
         
-        border: 2px solid #deebff;
-        border-radius: 30px;
-        height: 30%;
-        margin-left: 25px;
-        
-    }
+    border: 2px solid #deebff;
+    border-radius: 30px;
+    height: 30%;
+    margin-left: 25px;
+}
 .TextFiltre{
     font-size: 16px;
     font-weight: bold;
@@ -152,31 +178,131 @@ border-radius: 20px ;
     margin-right: 10px;
 
 }
-.Filtre:hover{
+.Filtre:hover {
     background-color: #0065fc;
-    border-radius: 30%;
 }
 .padTopFiltre{
     padding-top: 30px;
 }
 h2{
-    font-size: 16px;
+    font-size: 18px;
 }
+
 /* Info */
 .infoIcone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 20px;
-        height: 20px;
-        padding: 4px;
-        color: #0065fc;
-        font-size: 0.8rem;
-        border: 1px solid #deebff;
-        border-radius: 25px;
+        
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #0065fc;
+    border-radius: 30%;
+    
 }
 .infoPara{
     font-size: 80%;
     margin-left: 0px;
+}
+.contInfo{
+    margin-top: 40px;
+}
+/* Hebergement */
+.contHeb{
+    width: 60%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    margin-right: 50px;
+    margin-top: 40px;
+    min-width: 300px;
+    
+}
+.imgBoite{
+    display: flexbox;
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 10%;
+    margin: 20px;
+    min-width: 250px;
+}
+.imgText{
+    width: 90%;
+    height:50%;
+}
+.cCont1{
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.cCont2{
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.imgHeb1{
+    background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb1{
+    background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb2{
+    background-image: url(./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb3{
+    background-image: url(./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb4{
+    background-image: url(./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb5{
+    background-image: url(./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.imgHeb6{
+    background-image: url(./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+/* Populaire */
+.boitePop{
+    width: 30%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    margin-right: 50px;
+    margin-top: 40px;
+    
+
 }
