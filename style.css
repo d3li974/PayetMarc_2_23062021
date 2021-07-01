@@ -225,7 +225,7 @@ h2{
     left: 0px; 
 }
 h4{
-    font-size: 90%;
+    font-size: 110%;
 }
 .pHebText{
     font-size: 80%;
@@ -382,15 +382,22 @@ h4{
 .h3Pop{
     display: flex;
     font-size: 160%;
-    margin-left: -20px;
+    margin-left: -30px;
 
+}
+.pPopText{
+    font-size: 80%;
+    margin-top: -20px;
 }
 .padTextPop{
     padding-left: 20px;
+    margin-top: -20px;
 }
 .etoilePop{
     display: inline-flex;
     justify-content: start;
+    margin-left: -55px;
+    margin-top: 25px;
     
 }
 .iconePop{
