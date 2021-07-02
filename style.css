@@ -566,3 +566,23 @@ h5{
 .pAct{
     padding-left: 20px;
 }
+/* footer */
+footer{
+    margin-left: -30px;
+    margin-right: 50px;
+    display: inline-flex;
+    width: 300%;
+    
+}
+.proposFoot{
+    margin-left: 35px; 
+}
+.HebFoot{
+   margin-left: 350px;
+}
+.assisFoot{
+    margin-left: 550px;
+}
+.pFoot{
+    font-size: small;
+}
