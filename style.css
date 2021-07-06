@@ -635,6 +635,9 @@ footer{
         width: 100%;
         order: -1;
     }
+    .etoilePop{
+        margin-top: 0px;
+    }
     .contInfo{
         margin-left: 20px;
     }
