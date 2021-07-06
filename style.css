@@ -638,6 +638,9 @@ footer{
     .contInfo{
         margin-left: 20px;
     }
+    .infoPara{
+        font-size: 12px;
+    }
     .cFiltre{
         justify-content: start;
     }
