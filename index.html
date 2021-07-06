@@ -18,17 +18,19 @@
                 <nav class="fSpaceBetween">
                 
                         <div> <img id="imgLogo" src="./images/logo/Reservia.svg" alt="Revervia logo"> </div>
-                        <div class="fSpaceAround divNav">
-                            <div class="NavHover fCenter"> <a class= "nodeco SizeNav black pNav" href="#HebNav">Hébergements</a> </div>
-                            <div class="NavHover fCenter"> <a class="nodeco SizeNav black pNav" href="#ActNav">Activités</a> </div>
-                            <div id="SignIn"> <a  class="nodeco BoldGras Bleufoncé SizeNav fCenter-" href="#">S'inscrire</a> </div>
+                        <div id="test"> 
+                            <ul class="fSpaceAround divNav nodeco">
+                                <li class="NavHover fCenter"> <a class= "nodeco SizeNav black pNav" href="#HebNav">Hébergements</a> </li>
+                                <li class="NavHover fCenter"> <a class="nodeco SizeNav black pNav" href="#ActNav">Activités</a> </li>
+                                <li id="SignIn nodeco"> <a  class=" BoldGras Bleufoncé SizeNav fCenter-" href="#">S'inscrire</a> </li>
+                            </ul>
                         </div>
                 
                 </nav>
             </header>     
         <!-- Fin Navigateur-->
         <!-- Barre de recherche -->
-            <section >
+            <section class="margLeft" >
                 <div> <h1 class="BoldGras NoBorder">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="NoBorder MargingBot">En plein centre ville ou en pleine nature</p>
                 </div>
@@ -40,10 +42,10 @@
             </section>
         <!-- Fin Barre de recherche  -->
         <!-- Filtres  -->
-            <section class="padTopFiltre fSpaceBetween fWrap">
+            <section class="padTopFiltre fSpaceBetween fWrap margLeft">
                 <div class="fSpaceBetween boiteFiltres fCenter fStart">
                     <div class="fStart"><h2 class="boldGras">Filtres</h2></div>
-                    <div class="fCenter fSpaceBetween">
+                    <div class="fCenter fSpaceBetween cFiltre">
                         <div class="fCenter Filtre FiltreHover">
                             <div class="Bleufoncé backbleuclair IconeFiltreSize fCenter"><i class="fas fa-money-bill-wave"></i></div>
                             <div class="TextFiltre"><p>Economique</p></div>
@@ -52,33 +54,33 @@
                             <div class="Bleufoncé backbleuclair IconeFiltreSize fCenter"><i class="fas fa-child"></i></div>
                             <div class="TextFiltre"><p>Familliale</p></div>
                         </div>
-                        <div class="fCenter Filtre">
+                        <div id="filtreRom" class="fCenter Filtre">
                             <div class="Bleufoncé backbleuclair IconeFiltreSize fCenter"><i class="fas fa-heart"></i></div>
                             <div class="TextFiltre"><p>Romantique</p></div>
                         </div>
-                        <div class="fCenter Filtre">
+                        <div id="filtrePets" class="fCenter Filtre">
                             <div class="Bleufoncé backbleuclair IconeFiltreSize fCenter"><i class="fas fa-dog"></i></div>
                             <div class="fCenter"><p class="TextFiltre">Animaux autorisés</p></div>
                         </div>
                     </div>
                 </div>      
             </section>
-            <div class="fSpaceBetween fStart contInfo">
+            <div class="fSpaceBetween fStart contInfo margLeft">
                 <div class="infoIcone fCenter backGris"><i class="fas fa-info"></i></div>
                 <div class="fCenter fStart"><p class="infoPara">Plus de 500 logements sont disponibles dans cette ville</p></div>
             </div>
             <!-- Filtres Fin  -->
             <!-- Hebergement Debut  -->
-            <article class="fSpaceBetween NoBorder">
+            <article class="fSpaceBetween margLeft ">
                 <div class="contHeb backGris">
-                    <h3 id="HebNav" class="BoldGras h3Heb">Hébergements à Marseille</h3>
+                    <h2 id="HebNav" class="BoldGras h3Heb">Hébergements à Marseille</h2>
                     <div class="cCont1 fSpaceBetween fCenter">
                         <div class="imgBoite">
                             <div class="imgText">
                                 <div class="imgHeb1"></div>
                                 <div class="imgTextPos">
                                     <div>
-                                        <h4 class="NoBorder padText">Auberge de la Cannebière</h4>
+                                        <h3 class="NoBorder padText">Auberge de la Cannebière</h3>
                                         <p class="NoBorder padText pHebText">Nuit à partir de 25€</p>
                                     </div>
                                     <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -96,7 +98,7 @@
                             <div class="imgHeb2"></div>
                             <div class="imgTextPos">
                                 <div>
-                                    <h4 class="NoBorder padText">Hôtel du port</h4>
+                                    <h3 class="NoBorder padText">Hôtel du port</h3>
                                     <p class="NoBorder padText pHebText">Nuit à partir de 52€</p>
                                 </div>
                                 <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -114,7 +116,7 @@
                             <div class="imgHeb3"></div>
                             <div class="imgTextPos">
                                 <div>
-                                    <h4 class="NoBorder padText">Hôtel les mouettes</h4>
+                                    <h3 class="NoBorder padText">Hôtel les mouettes</h3>
                                     <p class="NoBorder padText pHebText">Nuit à partir de 76€</p>
                                 </div>
                                 <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -134,7 +136,7 @@
                             <div class="imgHeb4"></div>
                             <div class="imgTextPos">
                                 <div>
-                                    <h4 class="NoBorder padText">Hôtel de la mer</h4>
+                                    <h3 class="NoBorder padText">Hôtel de la mer</h3>
                                     <p class="NoBorder padText pHebText">Nuit à partir de 46€</p>
                                 </div>
                                 <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -152,7 +154,7 @@
                             <div class="imgHeb5"></div>
                             <div class="imgTextPos">
                                 <div>
-                                    <h4 class="NoBorder padText">Auberge Le Panier</h4>
+                                    <h3 class="NoBorder padText">Auberge Le Panier</h3>
                                     <p class="NoBorder padText pHebText">Nuit à partir de 23€</p>
                                 </div>
                                 <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -170,7 +172,7 @@
                             <div class="imgHeb6"></div>
                             <div class="imgTextPos">
                                 <div>
-                                    <h4 class="NoBorder padText">Hôtel chez Amina</h4>
+                                    <h3 class="NoBorder padText">Hôtel chez Amina</h3>
                                     <p class="NoBorder padText pHebText">Nuit à partir de 96€</p>
                                 </div>
                                 <div class="fCenter fStart Bleufoncé pHebText"> 
@@ -190,7 +192,7 @@
                 <!-- Populaire debut-->
                 <aside class="boitePop backGris ">
                     <div class="h3Pop fSpaceAround">
-                        <h3>Les plus populaire</h3>
+                        <h2>Les plus populaire</h2>
                         <div class="iconePop"><i class="fas fa-chart-line"></i></div>
                     </div>
                     <div class="imgBoitePop">
@@ -198,7 +200,7 @@
                             <div class="imgPop1"></div>
                             <div class="imgTextPosPop fColCenter">
                                 <div class="padTextPop">
-                                    <h4 class="padText">Hôtel Le soleil du <br> matin</h4>
+                                    <h3 class="padText">Hôtel Le soleil du <br> matin</h3>
                                     <p class="padText pPopText">Nuit à partir de 128€</p>
                                 </div>
                                 <div class="Bleufoncé pHebText etoilePop"> 
@@ -216,7 +218,7 @@
                             <div class="imgPop2"></div>
                             <div class="imgTextPosPop fColCenter">
                                 <div class="padTextPop">
-                                    <h4 class="padText">Au coeur de l'eau <br> Chambres d'hôtes</h4>
+                                    <h3 class="padText">Au coeur de l'eau <br> Chambres d'hôtes</h3>
                                     <p class="padText pPopText">Nuit à partir de 71€</p>
                                 </div>
                                 <div class="Bleufoncé pHebText etoilePop"> 
@@ -234,7 +236,7 @@
                             <div class="imgPop3"></div>
                             <div class="imgTextPosPop fColCenter">
                                 <div class="padTextPop">
-                                    <h4 class="padText">Hôtel Tout bleu et <br> blanc</h4>
+                                    <h3 class="padText">Hôtel Tout bleu et <br> blanc</h3>
                                     <p class="padText pPopText">Nuit à partir de 68€</p>
                                 </div>
                                 <div class="Bleufoncé pHebText etoilePop"> 
@@ -250,9 +252,9 @@
                 </aside>
             </article>
             <!-- Activité debut-->
-            <section id="ActNav" class="sectAct">
-               <div><h5 class="h3Pop">Activités à Marseille</h5></div>
-               <div class="conAct  fSpaceBetween ">
+            <section id="ActNav" class="sectAct margLeft">
+               <div><h2 class="h3Pop">Activités à Marseille</h2></div>
+               <div class="conAct">
                     <div class="blocActA">
                         <div class="imgBoiteActA">
                             <div class="imgTextActA">
@@ -263,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blocActB">
+                    <div class="blocActB fColCenter">
                         <div class="imgBoiteActB">
                             <div class="imgTextAct">
                                 <div class="imgAct2"></div>
@@ -281,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blocActA">
+                    <div class="b">
                         <div class="imgBoiteActA">
                             <div class="imgTextActA">
                                 <div class="imgAct4"></div>
@@ -291,12 +293,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blocActB fSpaceAround">
+                    <div class="blocActB fColCenter">
                         <div class="imgBoiteActD">
                             <div class="imgTextAct">
                                 <div class="imgAct5"></div>
                                 <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Notre-Dame-de-la-Garde</Notre-Dame-de-la-Garde></p></div>
+                                    <div class="BoldGras pAct"><p>Notre-Dame-de-la-Garde</p></div>
                                 </div>
                             </div>
                         </div>
@@ -313,6 +315,7 @@
             </section>
         </body>
         <footer class="backGris">
+            <div class="contFoot">
                 <div class="proposFoot">
                     <div class="BoldGras"><p> A propos</p></div>
                     <div><p class="pFoot">Fonctionnement du site</p></div>
@@ -320,7 +323,7 @@
                     <div><p class="pFoot">Données et confidentialité</p></div>
                 </div>
                 <div class="HebFoot">
-                    <div class="BoldGras"><p></p>Nos Hébergements</p></div>
+                    <div class="BoldGras"><p>Nos Hébergements</p></div>
                     <div><p class="pFoot">Charte qualité</p></div>
                     <div><p class="pFoot">Soumettre votre hôtel</p></div>
                 </div>
@@ -329,6 +332,7 @@
                     <div><p class="pFoot">Centre d'aide</p></div>
                     <div><p class="pFoot">Nous contacter</p></div>
                 </div>
+            </div>
         </footer>
         
 

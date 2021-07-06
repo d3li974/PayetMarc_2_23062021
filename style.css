@@ -1,13 +1,16 @@
-body, html{
+body{
     font-family: "Raleway";
-    margin-left: 20px;
-    max-width: 2400px;
+    margin: 0px;   
+}
+.margLeft{
+    margin-left: 50px;
 }
 .fColonne{
     display: flex;
     flex-direction: column;
 }
 .fWrap{
+    display: flex;
     flex-flow: wrap;
 }
 .fSpaceBetween{
@@ -65,15 +68,19 @@ body, html{
 }
 .backGris{
     background-color: #F2F2F2;
+    width: 100%;
 }
 .BoldGras{
-    font-weight: bold;
+    font-weight: bolder;
 }
 .black{
     color: black;
 }
 /* Nav */ 
 
+ul{
+    list-style: none;
+}
 .nodeco{
     text-decoration: none;
 }
@@ -88,10 +95,11 @@ body, html{
 #SignIn:hover {
     border-bottom: 2px #0065fc solid;
     border-top: none;
+    list-style-type: none;
     
   }
   .NavHover{
-      height: 100px;
+     height: 100%;
   }
   .NavHover:hover{
     border-top: 2px #0065fc solid;
@@ -103,10 +111,7 @@ body, html{
     font-weight: bold;
   }
   #imgLogo{
-      
-      flex-basis: 580%;
-      margin-top: 30px;
-      padding-top: 20px;
+      margin-left: 50px;
       cursor: pointer;
   }
 /* Barre de recherche */
@@ -182,6 +187,7 @@ body, html{
 }
 .Filtre:hover {
     background-color: #0065fc;
+    color: #F2F2F2;
 }
 .padTopFiltre{
     padding-top: 30px;
@@ -241,7 +247,7 @@ h4{
     background-color: white;
     padding: 1%;
     border-radius: 10%;
-    min-width: 200px;
+    min-width: 255px;
     margin-right: 10px;
     margin-bottom: 40px;
     margin-left: 30px;
@@ -266,7 +272,7 @@ h4{
     margin-left: 10px;
     padding-bottom: 20px;
     padding-right: 20px;
-}
+} 
 .imgHeb1{
     background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
     width: 100%;
@@ -329,10 +335,11 @@ h4{
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 25px 25px 25px 25px;
-    margin-right: 50px;
+    margin-right: 30px;
     margin-top: 40px;
     min-height: 740px;
-    min-width: 500px;
+    min-width: 400px;
+    
 }
 .imgBoitePop{
     display: flex;
@@ -410,25 +417,21 @@ h4{
 }
 /* activités */ 
 .conAct{
-    display: flex;
+    display: grid;
     width: 100%;
     height: 100%;
-    max-width: 1805px;
-    margin-left: 25px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
 }
 .blocActA{
-    width: 21%;
-    height: 100%;
-    max-width: 600px;
+    
+    width: 100%
     
     
 }
 .blocActB{
-    width: 21%;
-    height: 100%;
-    max-width: 600px;
-    justify-content: space-between;
-    flex-direction: column;
+    
+    width: 100%
     
 }
 .imgBoiteActA{
@@ -554,35 +557,94 @@ h4{
     width: 100%;
     height:70%;
 }
+/* */
 .sectAct{
-    margin-left: -30px;
+    display: flex;
     max-width: 1855px;
-    padding-top: 50px;    
+    padding-top: 50px;
+    flex-wrap: wrap;  
 }
-h5{
-    padding-left: 55px;
-    font-weight: bold;
 }
 .pAct{
     padding-left: 20px;
 }
 /* footer */
 footer{
-    margin-left: -30px;
-    margin-right: 50px;
-    display: inline-flex;
-    width: 300%;
-    
+   width: 100%;
 }
 .proposFoot{
-    margin-left: 35px; 
-}
-.HebFoot{
-   margin-left: 350px;
-}
-.assisFoot{
-    margin-left: 550px;
+    margin-left: 80px;
 }
 .pFoot{
     font-size: small;
 }
+.contFoot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* responsive */ 
+@media screen and (max-width: 420px)  {
+    .contFoot{
+        display: flex;
+        flex-direction: column;
+    }
+    .proposFoot{
+        margin-left: 0px;
+    }
+    .contFoot{
+        margin-left: 30px;
+    }
+    .conAct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imgBoiteActA{
+        min-height: 200px;
+    }
+    .imgBoiteActC{
+        min-height: 200px;
+    }
+    .sectAct{
+        margin-left: 10px;
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    .h3Pop{
+        margin-left: -20px;
+    }
+    .contHeb{
+        background: none;
+        margin-left: 20px;
+    }
+    .imgBoite{
+        width: 100%;
+        min-width: 330px;
+        min-height: 200px;
+    }
+    .pHeb{
+        margin-left: -50px;
+    }
+    .h3Heb{
+        margin-left: -50px;
+        font-size: 20px;
+    }
+    .boitePop{
+        margin-left: -50px;
+        min-height: auto;
+        width: 100%;
+        order: -1;
+    }
+    .contInfo{
+        margin-left: 20px;
+    }
+    .cFiltre{
+        justify-content: start;
+    }
+    #test{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
