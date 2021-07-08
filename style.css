@@ -288,7 +288,7 @@ h2{
 transform:scale(1.25);
 }
 .imgHeb{
-    width: 90%;
+    width: 100%;
     height: 115px;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
