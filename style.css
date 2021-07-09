@@ -546,6 +546,12 @@ footer{
         height: 70%;
     }
 }
+@media screen and (max-width: 770px){
+    .imgBoite{
+     padding-left: 0px;
+     width: 100%;
+    }
+}
 @media screen and (max-width: 670px) {
 nav li {
     width: 100%;
