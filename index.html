@@ -13,22 +13,19 @@
             <title>Reservia</title>
         </head>
         <body>
-            <!-- Debut Navigateur-->
-            <header>
-                <nav class="fSpaceBetween">
-                
-                        <div> <img id="imgLogo" src="./images/logo/Reservia.svg" alt="Revervia logo"> </div>
-                            <ul class="fSpaceAround divNav nodeco">
-                                <li> <a class= "nodeco SizeNav black pNav" href="#HebNav">Hébergements</a> </li>
-                                <li> <a class="nodeco SizeNav black pNav" href="#ActNav">Activités</a> </li>
-                                <li> <a class="nodeco Bleufoncé BoldGras SizeNav" id="SignIn" href="#">S'inscrire</a> </li>
+        <!--///////////////////////// Navigateur /////////////////////////-->
+            <header class="fSpaceBetween">
+                <div> <img id="imgLogo" src="./images/logo/Reservia.svg" alt="Revervia logo"> </div>
+                    <nav class="fSpaceBetwwen">
+                            <ul>
+                                <li> <a href="#HebNav">Hébergements</a> </li>
+                                <li> <a href="#ActNav">Activités</a> </li>
                             </ul>
-                        </div>
-                
-                </nav>
+                            <a id="signIn" href="#">S'inscrire</a>
+                    </nav>
             </header>     
-        <!-- Fin Navigateur-->
-        <!-- Barre de recherche -->
+        <!--///////////////////////// Navigateur /////////////////////////-->
+        <!--///////////////////////// SearchBarre /////////////////////////-->
             <section class="margLeft SearchBarre" >
                 <div> <h1 class="BoldGras NoBorder">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="NoBorder MargingBot">En plein centre ville ou en pleine nature</p>
@@ -40,8 +37,8 @@
                     <button class="iconeRecherche fCenter"><i class="fas fa-search  "></i></button>
                 </div>
             </section>
-        <!-- Fin Barre de recherche  -->
-        <!-- Filtres  -->
+        <!--///////////////////////// SearchBarre /////////////////////////-->
+        <!--///////////////////////// Filtres /////////////////////////-->
             <section class="padTopFiltre fSpaceBetween fWrap margLeft">
                 <div class="fSpaceBetween boiteFiltres fCenter fStart">
                     <div class="fStart"><h2 class="boldGras">Filtres</h2></div>
@@ -69,12 +66,13 @@
                 <div class="infoIcone fCenter backGris"><i class="fas fa-info"></i></div>
                 <div class="fCenter fStart"><p class="infoPara">Plus de 500 logements sont disponibles dans cette ville</p></div>
             </div>
-            <!-- Filtres Fin  -->
-            <!-- Hebergement Debut  -->
+            <!--///////////////////////// Filtres /////////////////////////-->
+            <!--///////////////////////// Hebergement /////////////////////////-->
             <article class="fSpaceBetween margLeft ">
                 <div class="contHeb backGris">
                     <h2 id="HebNav" class="BoldGras h3Heb">Hébergements à Marseille</h2>
                     <div class="fSpaceBetween fCenter">
+                        <!--///////////////////////// Auberge de la Cannebière /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                                 <div> <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imgHeb" alt="Auberge de la Cannebière"></div>
@@ -93,6 +91,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Hôtel du port /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                             <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imgHeb" alt="Hôtel du port">
@@ -111,6 +110,7 @@
                             </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Hôtel les mouettes /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                             <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imgHeb" alt="Hôtel les mouettes">
@@ -129,6 +129,7 @@
                             </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Hôtel de la mer /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                             <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imgHeb" alt="Hôtel de la mer">
@@ -147,6 +148,7 @@
                             </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Auberge Le Panier /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                             <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imgHeb" alt="Auberge Le Panier">
@@ -165,6 +167,7 @@
                             </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Hôtel chez Amina /////////////////////////-->
                         <div class="imgBoite">
                             <div class="imgText">
                             <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imgHeb" alt="Hôtel chez Amina">
@@ -183,22 +186,24 @@
                             </div>
                             </div>
                         </div>
+                        <!--///////////////////////// Hôtel chez Amina /////////////////////////-->
                     </div>
                     <div><p class="pHeb BoldGras">Afficher plus<p></div>
                 </div>
-
-                <!-- Populaire debut-->
+                <!--///////////////////////// Hebergement /////////////////////////-->
+                <!--///////////////////////// Populaire /////////////////////////-->
                 <aside class="boitePop backGris ">
                     <div class="fSpaceAround">
                         <h2 class="h3Pop">Les plus populaire</h2>
                         <div class="iconePop h3Pop"><i class="fas fa-chart-line"></i></div>
                     </div>
+                    <!--///////////////////////// Hôtel Le soleil du matin /////////////////////////-->
                     <div class="imgBoitePop">
                         <div class="imgTextPop">
                             <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="imgPop" alt="Hôtel Le soleil du matin">
                             <div class="imgTextPosPop fColCenter">
                                 <div class="padTextPop">
-                                    <h3 class="padText">Hôtel Le soleil du <br> matin</h3>
+                                    <h3 class="padText">Hôtel Le soleil du matin</h3>
                                     <p class="padText pPopText">Nuit à partir de 128<span class="BoldGras">€</span></p>
                                 </div>
                                 <div class="Bleufoncé pHebText etoilePop"> 
@@ -211,6 +216,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--///////////////////////// Au coeur de l'eau Chambres d'hôtes /////////////////////////-->
                     <div class="imgBoitePop">
                         <div class="imgTextPop">
                             <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="imgPop" alt="Au coeur de l'eau Chambres d'hôtes">
@@ -229,12 +235,13 @@
                             </div>
                         </div>
                     </div>
+                    <!--///////////////////////// Hôtel Tout bleu et blanc /////////////////////////-->
                     <div class="imgBoitePop">
                         <div class="imgTextPop">
                             <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="imgPop" alt="Hôtel Tout bleu et  blanc">
                             <div class="imgTextPosPop fColCenter">
                                 <div class="padTextPop">
-                                    <h3 class="padText">Hôtel Tout bleu et  blanc</h3>
+                                    <h3 class="padText">Hôtel Tout bleu et blanc</h3>
                                     <p class="padText pPopText">Nuit à partir de 68<span class="BoldGras">€</span></p>
                                 </div>
                                 <div class="Bleufoncé pHebText etoilePop"> 
@@ -246,93 +253,93 @@
                                 </div>
                             </div>
                         </div>
+                    <!--///////////////////////// Hôtel Tout bleu et blanc /////////////////////////-->    
                     </div> 
                 </aside>
+                <!--///////////////////////// Populaire /////////////////////////-->
             </article>
-            <!-- Activité debut-->
+            <!--///////////////////////// section Activités /////////////////////////-->
             <section id="ActNav" class="sectAct margLeft">
-               <div><h2 class="h3Pop2 BoldGras">Activités à Marseille</h2></div>
-               <div class="conAct">
-                    <div class="blocActA">
-                        <div class="imgBoiteActA">
-                            <div class="imgTextActA">
-                                <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="imgAct" alt="Vieux Port">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Vieux Port</p></div>
-                                </div>
-                            </div>
-                        </div>
+                <div><h2 class="h3Pop2 BoldGras">Activités à Marseille</h2></div>
+                <div class="conAct">
+                     <div class="blocActA">
+                         <div class="imgBoiteActA">
+                             <div class="imgTextActA">
+                                 <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="imgAct" alt="Vieux Port">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Vieux Port</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="blocActB fColCenter">
+                         <div class="imgBoiteActB">
+                             <div class="imgTextAct">
+                                 <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="imgAct" alt="Fort de Pomègues">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Fort de Pomègues</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="imgBoiteActC">
+                             <div class="imgTextActC">
+                                 <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="imgAct" alt="Îles du Frioul">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Îles du Frioul</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                    <div class="blocActA2">
+                         <div class="imgBoiteActA">
+                             <div class="imgTextActA">
+                                 <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="imgAct" alt="Parc Nationnal des Calanques">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Parc Nationnal des Calanques</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="blocActB2 fColCenter">
+                         <div class="imgBoiteActD">
+                             <div class="imgTextAct">
+                                 <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="imgAct" alt="Notre-Dame-de-la-Garde">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Notre-Dame-de-la-Garde</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="imgBoiteActD1">
+                             <div class="imgTextAct">
+                                 <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="imgAct" alt="Parc Longchamp">
+                                 <div class="imgTextPosAct">
+                                     <div class="BoldGras pAct"><p>Parc Longchamp</p></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+             </section>
+            <!--///////////////////////// section Activités /////////////////////////-->
+            <footer class="backGris">
+                <div class="contFoot">
+                    <div class="proposFoot">
+                        <div class="BoldGras"><p> A propos</p></div>
+                        <div><p class="pFoot">Fonctionnement du site</p></div>
+                        <div><p class="pFoot">Conditions generales de vente</p></div>
+                        <div><p class="pFoot">Données et confidentialité</p></div>
                     </div>
-                    <div class="blocActB fColCenter">
-                        <div class="imgBoiteActB">
-                            <div class="imgTextAct">
-                                <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="imgAct" alt="Fort de Pomègues">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Fort de Pomègues</p></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="imgBoiteActC">
-                            <div class="imgTextActC">
-                                <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="imgAct" alt="Îles du Frioul">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Îles du Frioul</p></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="HebFoot">
+                        <div class="BoldGras"><p>Nos Hébergements</p></div>
+                        <div><p class="pFoot">Charte qualité</p></div>
+                        <div><p class="pFoot">Soumettre votre hôtel</p></div>
                     </div>
-                    <div class="b">
-                        <div class="imgBoiteActA">
-                            <div class="imgTextActA">
-                                <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="imgAct" alt="Parc Nationnal des Calanques">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Parc Nationnal des Calanques</p></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="assisFoot">
+                        <div class="BoldGras"><p>Assistance</p></div>
+                        <div><p class="pFoot">Centre d'aide</p></div>
+                        <div><p class="pFoot">Nous contacter</p></div>
                     </div>
-                    <div class="blocActB fColCenter">
-                        <div class="imgBoiteActD">
-                            <div class="imgTextAct">
-                                <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="imgAct" alt="Notre-Dame-de-la-Garde">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Notre-Dame-de-la-Garde</p></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="imgBoiteActD1">
-                            <div class="imgTextAct">
-                                <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="imgAct" alt="Parc Longchamp">
-                                <div class="imgTextPosAct">
-                                    <div class="BoldGras pAct"><p>Parc Longchamp</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </section>
+                </div>
+            </footer>
         </body>
-        <footer class="backGris">
-            <div class="contFoot">
-                <div class="proposFoot">
-                    <div class="BoldGras"><p> A propos</p></div>
-                    <div><p class="pFoot">Fonctionnement du site</p></div>
-                    <div><p class="pFoot">Conditions generales de vente</p></div>
-                    <div><p class="pFoot">Données et confidentialité</p></div>
-                </div>
-                <div class="HebFoot">
-                    <div class="BoldGras"><p>Nos Hébergements</p></div>
-                    <div><p class="pFoot">Charte qualité</p></div>
-                    <div><p class="pFoot">Soumettre votre hôtel</p></div>
-                </div>
-                <div class="assisFoot">
-                    <div class="BoldGras"><p>Assistance</p></div>
-                    <div><p class="pFoot">Centre d'aide</p></div>
-                    <div><p class="pFoot">Nous contacter</p></div>
-                </div>
-            </div>
-        </footer>
-        
-
-        
     </html>
