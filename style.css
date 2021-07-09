@@ -524,7 +524,7 @@ footer{
         width: 100%;
     }
     .imgBoiteActA, .imgBoiteActB, .imgBoiteActC, .imgBoiteActD, .imgBoiteActD1{
-        max-height: 200px;
+        max-height: 250px;
         min-height: 200px;
     }
     .imgBoiteActD, .imgBoiteActB{
@@ -550,6 +550,9 @@ footer{
     .imgBoite{
      padding-left: 0px;
      width: 100%;
+    }
+    .conAct{
+        padding-bottom: 30px;
     }
 }
 @media screen and (max-width: 670px) {
@@ -595,6 +598,14 @@ nav li {
     .blocActA2{
         padding-top: 100px;
     }
+    .imgBoiteActA, .imgBoiteActB, .imgBoiteActC, .imgBoiteActD, .imgBoiteActD1{
+        min-height: 200px;
+        height: 100%;
+    }
+    .blocActA2{
+        padding: 0px;
+    }
+    
     .h3Pop{
         margin-left: -20px;
     }
