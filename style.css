@@ -6,7 +6,6 @@ body{
     margin-left: 50px;
 }
 .fColonne{
-    display: flex;
     flex-direction: column;
 }
 .fWrap{
@@ -19,22 +18,10 @@ body{
     align-items: center; 
     flex-wrap: wrap;
 }
-.fColSpaceBetween{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
 .fCenter{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.fColCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .fSpaceEven{
     display: flex;
@@ -50,12 +37,6 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
-.fColSpaceAround{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    
 }
 .Bleufoncé{
     color: #0065fc;
@@ -125,6 +106,9 @@ nav ul {
 .bordureSearch{
     width: 420px;
     border-radius: 10px;
+}
+h1{
+    margin: 0px;
 }
 .NoBorder{
     border: 0px;
@@ -271,41 +255,21 @@ h2{
     margin-top: 15px;
     margin-left: 20px;
 }
-.cCont1{
-    margin-left: 0px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-.cCont2{
-    margin-left: 10px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-} 
-.imgBoite:hover{
-    cursor: pointer;
-    /* L'image est grossie de 25% */
--webkit-transform:scale(1.25); /* Safari et Chrome */
--moz-transform:scale(1.25); /* Firefox */
--ms-transform:scale(1.25); /* Internet Explorer 9 */
--o-transform:scale(1.25); /* Opera */
-transform:scale(1.25);
-}
 .imgHeb{
     width: 100%;
-    height: 115px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
 /* Populaire */
 .boitePop{
     width: 30%;
-    height: 100%;
+    height: 700px;
     background-color: #F2F2F2;
     border-radius: 25px 25px 25px 25px;
     margin-right: 30px;
     margin-top: 40px;
-    min-height: 690px;
-    min-width: 400px;
+    
     
 }
 .imgBoitePop{
@@ -313,7 +277,6 @@ transform:scale(1.25);
     justify-content: flex-start;
     width: 80%;
     height: 135px;
-    min-width: 200px;
     background-color: white;
     padding: 1%;
     border-radius: 25px 25px 25px 25px;
@@ -321,6 +284,7 @@ transform:scale(1.25);
     margin-bottom: 40px;
     margin-left: 30px;
 }
+
 .imgPop{
     width: 40%;
     height: 100%;
@@ -328,14 +292,11 @@ transform:scale(1.25);
     border-radius: 15px 0px 0px 15px;
     justify-content: start;
 }
-.imgBoitePop:hover{
-    cursor: pointer;
-    /* L'image est grossie de 25% */
--webkit-transform:scale(1.25); /* Safari et Chrome */
--moz-transform:scale(1.25); /* Firefox */
--ms-transform:scale(1.25); /* Internet Explorer 9 */
--o-transform:scale(1.25); /* Opera */
-transform:scale(1.25);
+.imgPop2{
+    width: 52%;
+}
+.marStars{
+    margin-left: -20px;
 }
 .imgTextPop{
     width: 100%;
@@ -360,6 +321,7 @@ transform:scale(1.25);
 .padTextPop{
     padding-left: 20px;
     margin-top: -20px;
+   
 }
 .etoilePop{
     display: inline-flex;
@@ -373,123 +335,73 @@ transform:scale(1.25);
     justify-content: flex-end;
 }
 /* activités */ 
-
 .conAct{
-    display: grid;
     width: 100%;
+    padding-bottom: 30px;
+}
+.BlockPhotoAct{
+    display: flex;
+    justify-content: space-between;
+    max-height: 450px;
+}
+#bloc1A, #bloc1B {
+    display: flex;
+}
+.block2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.imgBoiteAct{
+    width: 92%;
     height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.imgBoiteActA{
     
+}
+#Pomegues{
+    
+    width: 92%;
+    height: 55%;
+}
+#Frioule{
+    width: 92%;
+    height: 35%;
+    
+}
+.imgBoiteSmall{
     display: flex;
-    width: 100%;
-    height: 135px;
-    min-width: 200px;
-    border: #F2F2F2 1px solid;  
-    border-radius: 25px 25px 25px 25px;
-    margin-bottom: 40px;
-    min-height: 445px;
-    box-shadow: 5px 5px 5px #d1d1d1;
-    
+    width: 92%;
+    height: 45%;
 }
-.imgBoiteActB{
-    
-    display: flex;
+.imgTextActSmall{
     width: 100%;
-    height: 250px;
-    min-width: 200px;
-    border: #F2F2F2 1px solid;  
-    border-radius: 25px 25px 25px 25px; 
-    margin-top: -10%;
-    margin-bottom: 15%;
-    box-shadow: 5px 5px 5px #d1d1d1;
-    
-    
+    height: 75%;
 }
-.imgBoiteActC{
-    
-    display: flex;
+.imgTextActBig{
     width: 100%;
-    height: 135px;
-    min-width: 200px;
-    border-radius: 25px 25px 25px 25px;
-    min-height: 30%;
-    box-shadow: 5px 5px 5px #d1d1d1;  
-}
-.imgBoiteActD{
-    
-    display: flex;
-    width: 100%;
-    height: 135px;
-    min-width: 200px;
-    border-radius: 25px 25px 25px 25px;
-    min-height: 200px;
-    margin-top: -13%; 
-    margin-bottom: 10%;
-    border: #F2F2F2 1px solid;  
-    box-shadow: 5px 5px 5px #d1d1d1;
-}
-.imgBoiteActD1{
-    
-    display: flex;
-    width: 100%;
-    height: 135px;
-    min-width: 200px;
-    border-radius: 25px 25px 25px 25px;
-    min-height: 200px;
-    border: #F2F2F2 1px solid; 
-    box-shadow: 5px 5px 5px #d1d1d1;    
-}
-.imgBoiteActA:hover, .imgBoiteActB:hover, .imgBoiteActC:hover, .imgBoiteActD:hover, .imgBoiteActD1:hover{
-    cursor: pointer;
-    /* L'image est grossie de 15% */
--webkit-transform:scale(1.10); /* Safari et Chrome */
--moz-transform:scale(1.10); /* Firefox */
--ms-transform:scale(1.10); /* Internet Explorer 9 */
--o-transform:scale(1.10); /* Opera */
-transform:scale(1.10);
+    height: 85%;
 }
 .imgAct{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
-    
-}
-/* taille de la photo */
-.imgTextAct{ 
-    width: 100%;
-    height:80%;
-}
-.imgTextActA{ 
-    width: 100%;
-    height:90%;
-}
-.imgTextActC{ 
-    width: 100%;
-    height:70%;
-}
-/* */
-.sectAct{
-    display: flex;
-    width: 100%;
-    padding-top: 50px;
-    flex-wrap: wrap;  
 }
 .imgTextPosAct{
-    margin-left: 30px;
-    padding-top: -10px;
+    margin-left: 5%;
+}
+.decoBoiteAct{
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 5px 5px 5px #d1d1d1;
 }
 
 /* footer */
 footer{
-   width: 100%;
+    margin: 0px;
+    width: 100%;
+    margin-top: 50px;
 }
 .proposFoot{
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .pFoot{
     font-size: small;
@@ -507,180 +419,160 @@ footer{
 @media screen and (max-width: 1350px){
     .boitePop{
         order: -1;
-        width: 80%;
+        width: 100%;
         min-height: auto;
+        padding: 0px;
     }
     .contHeb{
-        width: 80%;
+        width: 100%;
     }
 }
-@media screen and (max-width: 1200px){
-    .conAct{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 900px){
+    .contHeb{
+        background: none;
     }
-    .imgAct{
-        max-height: 200px;
-        width: 100%;
-    }
-    .imgBoiteActA, .imgBoiteActB, .imgBoiteActC, .imgBoiteActD, .imgBoiteActD1{
-        max-height: 250px;
-        min-height: 200px;
-    }
-    .imgBoiteActD, .imgBoiteActB{
-        margin: 0%;
-    }
-    .imgBoiteActD1, .imgBoiteActC{
-        padding-top: 60px;
-    }
-    .blocActB2{
-        display: flex;
-        justify-content: space-around;
-    }
-    .imgTextActA{
-        width: 100%;
-        height: 70%;
-    }
-    .imgTextActB{
-        width: 100%;
-        height: 70%;
-    }
-}
-@media screen and (max-width: 770px){
     .imgBoite{
-     padding-left: 0px;
-     width: 100%;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 5px 5px 5px #d1d1d1;
     }
-    .conAct{
+    .BlockPhotoAct{
+        flex-direction: column;
+        max-height: 30%;
+        justify-content: space-between;
+    }
+    #bloc1A, #bloc1B{
+        display: flex;
         padding-bottom: 30px;
+        
+    }
+    #Pomegues, #Frioule{
+        height: 45%;
     }
 }
-@media screen and (max-width: 670px) {
-nav li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 3px solid #f2f2f2;
-    padding-bottom: 30px;
+@media screen and (max-width: 680px){
+    .imgBoite{
+        width: 90%;
+    }
+    .imgText{
+        height: 60%;
+    }
+    .margLeft{
+        margin: 0px;
+    }
+    .boitePop{
+        display: block;
+        border-radius: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+    .imgBoitePop{
+        width: 90%;
+        margin-left: 20px;
+        padding: 0px;
+    }
+    h1{
+        margin: 20px;
+    }
+    .RepMar{
+        margin-left: 20px;
+    }
+    nav {
+        width: 100%;
+        margin: 0;
+      }
 }
-}
-@media screen and (max-width: 485px) {
-    #signIn {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+
+@media screen and (max-width: 500px){
+    #signIn{position: absolute;
+        top: 45px;
+        right: 30px;
+    }
+    nav a:hover {
+        border-top: none;
+      }
+      .navul{
+        border-bottom: 3px solid #f2f2f2;
+        
+      }
+      nav a:hover {
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 20px;
+      }
+    header{
+        display: block;
+    }
+    .navul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
     }
     #ButtonSearch{
         display: none;
     }
-    .iconeRecherche{
+    .iconeRecherche {
         display: flex;
-        width: 50px;
-        height: 48px;
-        background-color: #0065fc;
-        color: white;
-        border-radius: 20px 20px 20px 20px;
-        align-items: center;
         justify-content: center;
-        }
-}
-     
-@media screen and (max-width: 447px)  {
-    .contFoot{
-        display: flex;
-        flex-direction: column;
-    }
-    .proposFoot{
-        margin-left: 0px;
-    }
-    .contFoot{
-        margin-left: 30px;
-    }
-    .blocActA2{
-        padding-top: 100px;
-    }
-    .imgBoiteActA, .imgBoiteActB, .imgBoiteActC, .imgBoiteActD, .imgBoiteActD1{
-        min-height: 200px;
-        height: 100%;
-    }
-    .blocActA2{
-        padding: 0px;
-    }
-    
-    .h3Pop{
-        margin-left: -20px;
-    }
-    .contHeb{
-        background: none;
-        margin-left: 20px;
-        
-    }
-    .imgHeb{
-        min-height: 150px;
-        width: 100%;
-    }
-    .imgBoite{
-        padding-left: 0px;
-        width: 100%;
-        max-width: 410px;
-        min-width: 380px;
-        min-height: 250px;
-    }
-    .pHeb{
-        margin-left: -50px;
-    }
-    .imgBoite:hover{
+        align-items: center;
+        font-size: 15px;
+        background-color: #0065fc;
         cursor: pointer;
-        /* L'image est grossie de 10% */
-    -webkit-transform:scale(1.10); /* Safari et Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* Internet Explorer 9 */
-    -o-transform:scale(1.10); /* Opera */
-    transform:scale(1.10);
-    }
-    .h3Heb{
-        margin-left: -50px;
-        font-size: 20px;
-    }
-    .imgBoitePop:hover{
-        cursor: pointer;
-        /* L'image est grossie de 10% */
-    -webkit-transform:scale(1.10); /* Safari et Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* Internet Explorer 9 */
-    -o-transform:scale(1.10); /* Opera */
-    transform:scale(1.10);
-    }
-    .boitePop{
-        min-width: 400px;
-        margin: -50px;
-        min-height: 250px;
-        width: 100%;
-        order: -1;
-    }
-    .contInfo{
-        margin-left: 20px;
-    }
-    .infoPara{
-        font-size: 12px;
-    }
-    
-    .cFiltre{
-        justify-content: start;
-        margin-left: -20px;
-    }
-    
-    .MargSearch{
-        margin-left: -55px;
-    }
-    .iconeRecherche:hover{
+        color: white;
+        border-radius: 15px;
+        border: 1px solid #f2f2f2;
+        width: 40px;
+        height: 58px;
+      }
+      .iconeRecherche:hover{
         background-color: #DEEBFF;
         color: black;
         font-weight: bolder;
         border: #F2F2F2 2px solid;
     }
-    .IcSearch{
-        font-size: 18px;
+    .cFiltre{
+        justify-content: start;
+    }
+    .bordureSearch{
+        width: 100%;
+    }
+   .BlockPhotoAct{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   #Pomegues, #Frioule{
+       height: 200px;
+       width: 90%;
+       margin-top: 20px;
+       margin-left: 20px;
+   }
+   .imgBoiteSmall{
+    height: 200px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+   }
+   .imgBoiteAct{
+    height: 200px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+   }
+    #bloc1A, #bloc1B{
+        display: flexbox;
+        flex-direction: column;
+    }
+    .contFoot{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+    .proposFoot{
+        margin-left: 0px;
     }
     
 }
+    
+
+
 
