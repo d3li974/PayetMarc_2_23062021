@@ -559,9 +559,14 @@ footer{
     .cFiltre{
         justify-content: start;
     }
+    
     .bordureSearch{
         width: 100%;
     }
+    .imgBoite{
+        padding: 0%;
+    }
+    
    .BlockPhotoAct{
        display: flex;
        flex-direction: column;
