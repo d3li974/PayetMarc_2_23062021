@@ -566,6 +566,10 @@ footer{
     .imgBoite{
         padding: 0%;
     }
+    .imgTextPos{
+        margin-top: 0;
+
+    }
     
    .BlockPhotoAct{
        display: flex;
@@ -610,6 +614,19 @@ footer{
     }
     #HebNav, #ActNav{
         margin-left: 30px;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    #signIn{position: absolute;
+        top: 45px;
+        right: 5px;
+    }
+    .cFiltre{
+        flex-direction: column;
+    }
+    .contInfo{
+        justify-content:baseline;
     }
     
 }
