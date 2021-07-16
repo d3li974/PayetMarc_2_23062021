@@ -636,6 +636,10 @@ footer{
         top: 25px;
         right: 30px;
     }
+    .contInfo{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width: 360px){
     .bordureSearch{
