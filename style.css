@@ -209,6 +209,10 @@ h2{
     margin-left: 0px;
 }
 .contInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 40px;
 }
 /* Hebergement */
@@ -488,7 +492,6 @@ footer{
         margin: 0px;
     }
     .boitePop{
-        display: block;
         border-radius: 0px;
         width: 100%;
         margin: 0px;
@@ -558,7 +561,7 @@ footer{
         border: 2px solid #0065fc;
         width: 50px;
         height: 50px;
-        margin-left: -15px;
+        margin-left: -11px;
       }
       .iconeRecherche:hover{
         background-color: #DEEBFF;
@@ -628,7 +631,7 @@ footer{
     }
     
 }
-@media screen and (max-width: 415px){
+@media screen and (max-width: 425px){
     .bordureSearch{
         margin-left: -25px;
     }
@@ -661,6 +664,9 @@ footer{
         width: 100%;
     }
     .h3Pop{
+        margin-left: 10px;
+    }
+    .bordureSearch{
         margin-left: 10px;
     }
 }
