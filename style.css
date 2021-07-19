@@ -520,12 +520,15 @@ footer{
         margin-top: 0px;
     }
 }
-
-@media screen and (max-width: 500px){
-    #signIn{position: absolute;
-        top: 45px;
+@media screen and (max-width: 520px){
+    #signIn{
+        position: absolute;
+        top: 25px;
         right: 30px;
     }
+}
+@media screen and (max-width: 500px){
+    
     nav a:hover {
         border-top: none;
       }
@@ -567,7 +570,7 @@ footer{
         background-color: #DEEBFF;
         color: black;
         font-weight: bolder;
-        border: #F2F2F2 2px solid;
+        border: #DEEBFF 2px solid;
     }
     
     .cFiltre{
